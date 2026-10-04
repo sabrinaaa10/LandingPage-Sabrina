@@ -1,0 +1,397 @@
+/* =========================
+   BASIC STYLE
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #26364d;
+    margin: 0;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: white;
+    padding: 20px 60px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+   ========================= */
+
+section {
+    padding: 80px 60px;
+}
+
+
+/* =========================
+   TEXT
+   ========================= */
+
+h1 {
+    font-size: 48px;
+    color: #263f61;
+}
+
+h2 {
+    font-size: 32px;
+    color: #263f61;
+}
+
+h3 {
+    color: #263f61;
+}
+
+p {
+    line-height: 1.7;
+    color: #5f6f82;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    text-decoration: none;
+    color: #426aa3;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+    background-color: #426aa3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+img {
+    max-width: 100%;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+    color: #263f61;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #26364d;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #426aa3;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* Hero text */
+
+.hero-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #426aa3;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #426aa3;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* About image */
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 30;
+    height: 60;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* About text */
+.about-text {
+    flex: 1;
+}
+
+.about-text ul {
+    line-height: 2;
+    color: #5f6f82;
+}
+
+/* =========================
+   INTERESTS SECTION
+   ========================= */
+
+.interests {
+    text-align: center;
+}
+
+
+/* Section title */
+
+.section-title {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* Interest cards */
+
+.interest-container {
+    display: flex;
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* Individual card */
+.interest-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.icon {
+    font-size: 40px;
+}
+
+.interest-card p {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #263f61;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 30px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer p {
+    color: #dce5f0;
+}
+
+
+/* Social media */
+
+.social-links {
+    margin: 25px 0;
+}
+
+.social-links a {
+    color: white;
+
+    margin: 0 10px;
+
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #9fc3eb;
+}
+
+
+/* Copyright */
+
+.copyright {
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+
+    header {
+        padding: 20px 30px;
+    }
+
+    section {
+        padding: 60px 30px;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 330px;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    header {
+        padding: 20px;
+    }
+
+
+    /* Navigation menjadi vertikal */
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    /* Hero menjadi satu kolom */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 300px;
+    }
+
+
+    /* About menjadi satu kolom */
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Interest cards menjadi vertikal */
+
+    .interest-container {
+        flex-direction: column;
+    }
+
+
+    .interest-card {
+        width: auto;
+    }
+
+}
